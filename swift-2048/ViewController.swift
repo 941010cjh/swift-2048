@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
                             
-  override func viewDidLoad() {
-    super.viewDidLoad()
-  }
+  
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 
   @IBAction func startGameButtonTapped(_ sender : UIButton) {
     let game = NumberTileGameViewController(dimension: 4, threshold: 2048)
